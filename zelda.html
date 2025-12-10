@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zelda – Princesse de la Sagesse</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #2d4e1f;
+        --secondary: #faf7e8;
+        --accent: #f5e6a1;
+    }
+    body{margin:0;font-family:'Montserrat',sans-serif;background:var(--secondary);color:var(--primary);}
+    header{
+        background:url('https://i.imgur.com/zGGpJfg.jpeg') center/cover no-repeat;
+        height:60vh; display:flex; align-items:center; justify-content:center; position:relative;
+        color:white;text-align:center;
+    }
+    header::after{ content:""; position:absolute; inset:0; background:rgba(0,40,0,0.45);}
+    header h1{position:relative;font-family:'Playfair Display';font-size:3.5rem;color:var(--accent);}
+    nav{display:flex;justify-content:center;background:var(--primary);}
+    nav a{color:white;text-decoration:none;padding:15px 20px;transition:0.3s;}
+    nav a:hover{background:var(--accent);color:var(--primary);}
+    section{width:90%;max-width:1000px;margin:40px auto;}
+    h2{font-family:'Playfair Display';color:var(--primary);}
+    .info{background:white;padding:20px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+    .galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px;}
+    .galerie img{width:100%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.3);}
+    footer{background:var(--primary);color:white;text-align:center;padding:20px;margin-top:50px;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Zelda</h1>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="link.html">Link</a>
+    <a href="ganon.html">Ganon</a>
+</nav>
+
+<section>
+    <div class="info">
+        <h2>Profil</h2>
+        <p>Zelda est la princesse d’Hyrule et l’incarnation de la sagesse. Elle joue un rôle essentiel pour guider et protéger le royaume, souvent aux côtés de Link.</p>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Armes et Pouvoirs</h2>
+        <ul>
+            <li>Pouvoirs magiques liés à la Triforce de la Sagesse</li>
+            <li>Bombes et flèches magiques (dans certaines incarnations)</li>
+            <li>Pouvoir de téléportation et protection mystique</li>
+            <li>Capacité de guider et soutenir Link dans sa quête</li>
+        </ul>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Objectif</h2>
+        <p>Protéger Hyrule, guider Link et empêcher Ganon de s’emparer de la Triforce.</p>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Galerie</h2>
+        <div class="galerie">
+            <img src="https://www.pngmart.com/files/13/Princess-Zelda-PNG-Transparent-Image.png" alt="Zelda princesse">
+            <img src="https://i.ytimg.com/vi/0F03vBUj3Jg/maxresdefault.jpg" alt="Zelda magie">
+            <img src="https://i.imgur.com/7NvUQKj.jpeg" alt="Zelda aventure">
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Hyrule Fan Site
+</footer>
+
+</body>
+</html>

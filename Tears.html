@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tears of the Kingdom</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #624f2e;
+        --secondary: #f3ede1;
+        --accent: #b68b5f;
+    }
+    body{margin:0;font-family:'Montserrat',sans-serif;background:var(--secondary);color:var(--primary);}
+    header{
+        background:url('https://i.imgur.com/8H1s6HV.jpeg') center/cover no-repeat;
+        height:60vh; display:flex; align-items:center; justify-content:center; position:relative;text-align:center;
+    }
+    header::after{ content:""; position:absolute; inset:0; background:rgba(0,0,0,0.4);}
+    header h1{position:relative;font-family:'Playfair Display';font-size:3.5rem;color:var(--accent);}
+    nav{display:flex;justify-content:center;background:var(--primary);}
+    nav a{color:white;text-decoration:none;padding:15px 20px;transition:0.3s;}
+    nav a:hover{background:var(--accent);color:var(--primary);}
+    section{width:90%;max-width:1000px;margin:40px auto;}
+    h2{font-family:'Playfair Display';color:var(--primary);}
+    .info{background:white;padding:20px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+    .galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px;}
+    .galerie img{width:100%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.3);}
+    footer{background:var(--primary);color:white;text-align:center;padding:20px;margin-top:50px;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tears of the Kingdom</h1>
+</header>
+
+<nav>
+    
+    <a href="index.html">Accueil</a>
+    <a href="Ocarina.html">Ocarina of Time</a>
+    <a href="Breath%20of.html">Breath of the Wild</a>
+</nav>
+
+<section>
+    <div class="info">
+        <h2>Résumé</h2>
+        <p>Tears of the Kingdom continue l’épopée de Link dans un Hyrule élargi, mêlant exploration verticale et combats stratégiques pour protéger le royaume.</p>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Armes et Pouvoirs</h2>
+        <ul>
+            <li>Nouvelles armes légendaires et équipements</li>
+            <li>Pouvoirs des runes avancées pour manipuler l’environnement</li>
+            <li>Objets uniques pour résoudre les énigmes verticales</li>
+            <li>Magie et compétences évolutives</li>
+        </ul>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Objectif</h2>
+        <p>Explorer le ciel et la terre d’Hyrule, déjouer les menaces émergentes et protéger la Triforce.</p>
+    </div>
+
+    <div class="info" style="margin-top:20px;">
+        <h2>Galerie</h2>
+        <div class="galerie">
+            <img src="https://i.imgur.com/K7s4L8M.jpeg" alt="Hyrule vertical">
+            <img src="https://i.imgur.com/7lNNXJv.jpeg" alt="Link exploration">
+            <img src="https://i.imgur.com/2L7lMzV.jpeg" alt="Combat stratégique">
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Hyrule Fan Site
+</footer>
+
+</body>
+</html>
